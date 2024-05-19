@@ -1,0 +1,85 @@
+package com.example.javatraining;
+
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
+public class JavaVariablesAndOperators {
+
+    @Test
+    public void testOperators() {
+
+        int i =10;
+        int j =20;
+        int a = i + j;
+        System.out.println("Result of addition " +a);
+
+        int m = i* j;
+        System.out.println("Result of mutliplication " +m);
+
+        int d = j/i;
+        System.out.println("Result of division " +d);
+        
+        if (i==j){
+            System.out.println("i and j are equal");
+        }
+        else if (i<j){
+            System.out.println("i is less than j");
+        }
+        else if(i>j){
+            System.out.println("i is greater than j");
+        }
+
+        //TODO Logical condtions && || !
+
+        String fenId = "EA";
+
+        if (fenId == "01" || fenId =="00"){
+            System.out.println("01 is valid");
+        }
+        else if (fenId == "AA"){
+            System.out.println("AA is valid");
+        }
+        else if (fenId == "EA"){
+            System.out.println("EA is valid");
+        }
+        else {
+            System.out.println("Fen Id is invalid");
+        }
+
+        int x = 5;
+        System.out.println(x > 3 && x < 10);
+
+        String hello = "Hello";
+        String world = "World";
+        System.out.println(hello + world);
+        System.out.println(hello.concat(world));
+
+
+        Assertions.assertEquals(Integer.valueOf(10+20), 30); //add
+        Assertions.assertEquals(Integer.valueOf(10*10), 100); //multiply
+        Assertions.assertEquals(Integer.valueOf(4/2), 2);  //divide
+        Assertions.assertEquals(Boolean.valueOf(2 > 3), false);  // compare both value which is greater
+        Assertions.assertEquals(Boolean.valueOf(2 > 0), true);   //check whether both values are positive
+        Assertions.assertEquals("Hello World", "Hello World"); // check concat result here
+    }
+
+    @Test
+    public void testSwapNumbers() {
+        //you should use reassignment here , use third variable for helper
+        int var1 = 5;
+        int var2 = 9;
+        int var3;
+        var3=var1;
+        var1=var2;
+        Assertions.assertEquals(var1,9);
+        Assertions.assertEquals(var2,9);
+    }
+
+
+    @Test
+    void testWrapperDataTypes() {
+        Assertions.assertEquals(10,10 );
+        Assertions.assertTrue("Hello"== "Hello");
+    }
+
+}
