@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @AnuSuma
 - 👀 I’m interested in java Oppurtunities
-- 🌱 I’m currently learning Java
+- 🌱 I’m currently wdeveloping new APIs
 - 💞️ I’m looking to collaborate on Mainframe to Java modernization
 - 📫 How to reach me - +91 9740365900
 - 😄 Pronouns: She/her/Her's
